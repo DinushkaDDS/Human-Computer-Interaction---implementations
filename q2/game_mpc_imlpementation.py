@@ -209,7 +209,6 @@ class MPCController:
 
         # Define index sets: time steps 0...horizon for states, 0...horizon-1 for controls.
         model.T = pyo.RangeSet(0, horizon)
-        # model.U_idx = pyo.RangeSet(0, horizon-1)
 
         # Decision variables: y and v for states, u for control inputs.
         model.y = pyo.Var(model.T)
